@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "trace_version": 1,
+    "scenario_name": "sample_trace",
+    "run_id": "sample_1",
+    "model": "priority",
+    "seed": 123,
+    "sim_end_time": 20.0,
+    "num_nurses": 1,
+    "arrival_mean": 5.0,
+    "service_mean": 4.0
+  },
+  "events": [
+    {
+      "i": 0,
+      "t": 1.0,
+      "type": "arrival",
+      "patient_id": "0",
+      "triage": "yellow"
+    },
+    {
+      "i": 1,
+      "t": 1.0,
+      "type": "queue_enter",
+      "patient_id": "0",
+      "triage": "yellow"
+    },
+    {
+      "i": 2,
+      "t": 1.0,
+      "type": "queue_leave",
+      "patient_id": "0",
+      "triage": "yellow"
+    },
+    {
+      "i": 3,
+      "t": 1.0,
+      "type": "service_start",
+      "patient_id": "0",
+      "triage": "yellow",
+      "server_id": 0
+    },
+    {
+      "i": 4,
+      "t": 2.0,
+      "type": "arrival",
+      "patient_id": "1",
+      "triage": "red"
+    },
+    {
+      "i": 5,
+      "t": 2.0,
+      "type": "queue_enter",
+      "patient_id": "1",
+      "triage": "red"
+    },
+    {
+      "i": 6,
+      "t": 5.0,
+      "type": "service_end",
+      "patient_id": "0",
+      "triage": "yellow",
+      "server_id": 0
+    },
+    {
+      "i": 7,
+      "t": 5.0,
+      "type": "departure",
+      "patient_id": "0",
+      "triage": "yellow",
+      "server_id": 0
+    },
+    {
+      "i": 8,
+      "t": 5.0,
+      "type": "queue_leave",
+      "patient_id": "1",
+      "triage": "red"
+    },
+    {
+      "i": 9,
+      "t": 5.0,
+      "type": "service_start",
+      "patient_id": "1",
+      "triage": "red",
+      "server_id": 0
+    },
+    {
+      "i": 10,
+      "t": 8.0,
+      "type": "service_end",
+      "patient_id": "1",
+      "triage": "red",
+      "server_id": 0
+    },
+    {
+      "i": 11,
+      "t": 8.0,
+      "type": "departure",
+      "patient_id": "1",
+      "triage": "red",
+      "server_id": 0
+    }
+  ]
+}
+
