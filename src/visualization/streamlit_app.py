@@ -29,7 +29,7 @@ TRIAGE_COLORS = {
     "green": "#27ae60",
     "unknown": "#7f8c8d",
 }
-SPEED_OPTIONS = [0.25, 0.5, 1.0, 2.0, 4.0]
+SPEED_OPTIONS = [0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 16.0]
 PATIENT_ASSET_PATH = Path(__file__).resolve().parents[2] / "assets" / "patient.png"
 MAX_COMPLETED_TOKENS = 10
 DEMO_PRESET_FILES = {
@@ -113,11 +113,13 @@ def _render_controls(local_trace_files: list[Path]) -> None:
     )
     st.session_state.selected_demo_preset = selected_preset
 
-    if preset_load_col.button("load preset", use_container_width=True):
+    if preset_load_col.button(
+        "load preset",
+        use_container_width=True,
+        disabled=selected_preset == "custom",
+    ):
         preset_file = available_demo_presets.get(selected_preset)
-        if preset_file is None:
-            st.info("pick a demo preset to load")
-        else:
+        if preset_file is not None:
             trace = load_replay_trace(traces_by_name[preset_file])
             _load_trace_into_session(trace, source_name=preset_file)
             st.rerun()
