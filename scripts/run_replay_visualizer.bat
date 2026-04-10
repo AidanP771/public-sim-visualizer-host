@@ -4,13 +4,13 @@ setlocal
 rem replay run settings
 set MODEL=priority
 set SIM_TIME=400
-set ARRIVAL_MEAN=5
-set SERVICE_MEAN=4
-set NUM_NURSES=2
+set ARRIVAL_MEAN=15
+set SERVICE_MEAN=10
+set NUM_NURSES=3
 set SEED=
-set SCENARIO_NAME=my_scenario
+set SCENARIO_NAME=demo_lambda_15_mu_10_nurses_3
 set RUN_ID=run_01
-set OUTPUT_PATH=data/replays/my_scenario_run_01.json
+set OUTPUT_PATH=data/replays/demo_lambda_15_mu_10_nurses_3.json
 set STREAMLIT_PORT=
 
 set SEED_ARG=

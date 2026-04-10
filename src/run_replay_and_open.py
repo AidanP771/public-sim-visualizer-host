@@ -1,4 +1,5 @@
 import argparse
+import os
 import subprocess
 import sys
 from importlib.util import find_spec
@@ -72,10 +73,15 @@ def main():
         _launch_streamlit(
             streamlit_app=Path(args.streamlit_app),
             streamlit_port=args.streamlit_port,
+            replay_path=resolved_output,
         )
 
 
-def _launch_streamlit(streamlit_app: Path, streamlit_port: int | None) -> None:
+def _launch_streamlit(
+    streamlit_app: Path,
+    streamlit_port: int | None,
+    replay_path: Path,
+) -> None:
     # launch streamlit in a subprocess so replay export can finish immediately
     if find_spec("streamlit") is None:
         print("streamlit is not installed; install requirements and run with --open-ui again")
@@ -87,7 +93,10 @@ def _launch_streamlit(streamlit_app: Path, streamlit_port: int | None) -> None:
     if streamlit_port is not None:
         command.extend(["--server.port", str(streamlit_port)])
 
-    process = subprocess.Popen(command, cwd=str(project_root))
+    env = os.environ.copy()
+    env["SIM_REPLAY_TRACE"] = str(replay_path)
+
+    process = subprocess.Popen(command, cwd=str(project_root), env=env)
     print("Streamlit launch requested")
     print("-" * 40)
     print(f"app: {app_path}")

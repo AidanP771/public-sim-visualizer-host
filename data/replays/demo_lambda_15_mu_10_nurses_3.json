@@ -1,0 +1,2314 @@
+{
+  "metadata": {
+    "trace_version": 1,
+    "scenario_name": "demo_lambda_15_mu_10_nurses_3",
+    "run_id": "run_01",
+    "model": "priority",
+    "seed": 42,
+    "sim_end_time": 400.0,
+    "num_nurses": 3,
+    "arrival_mean": 15.0,
+    "service_mean": 10.0,
+    "created_utc": "2026-04-10T17:31:40.590626+00:00"
+  },
+  "events": [
+    {
+      "i": 0,
+      "t": 15.300904309122016,
+      "type": "arrival",
+      "patient_id": "0",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 1,
+      "t": 15.300904309122016,
+      "type": "queue_enter",
+      "patient_id": "0",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 2,
+      "t": 15.300904309122016,
+      "type": "queue_leave",
+      "patient_id": "0",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 3,
+      "t": 15.300904309122016,
+      "type": "service_start",
+      "patient_id": "0",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 4,
+      "t": 15.6808368947631,
+      "type": "arrival",
+      "patient_id": "1",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 5,
+      "t": 15.6808368947631,
+      "type": "queue_enter",
+      "patient_id": "1",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 6,
+      "t": 15.6808368947631,
+      "type": "queue_leave",
+      "patient_id": "1",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 7,
+      "t": 15.6808368947631,
+      "type": "service_start",
+      "patient_id": "1",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 8,
+      "t": 17.82676616582315,
+      "type": "service_end",
+      "patient_id": "0",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 9,
+      "t": 17.82676616582315,
+      "type": "departure",
+      "patient_id": "0",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 10,
+      "t": 35.68472698688434,
+      "type": "arrival",
+      "patient_id": "2",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 11,
+      "t": 35.68472698688434,
+      "type": "queue_enter",
+      "patient_id": "2",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 12,
+      "t": 35.68472698688434,
+      "type": "queue_leave",
+      "patient_id": "2",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 13,
+      "t": 35.68472698688434,
+      "type": "service_start",
+      "patient_id": "2",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 14,
+      "t": 35.987228758957926,
+      "type": "service_end",
+      "patient_id": "2",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 15,
+      "t": 35.987228758957926,
+      "type": "departure",
+      "patient_id": "2",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 16,
+      "t": 37.04901305598283,
+      "type": "arrival",
+      "patient_id": "3",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 17,
+      "t": 37.04901305598283,
+      "type": "queue_enter",
+      "patient_id": "3",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 18,
+      "t": 37.04901305598283,
+      "type": "queue_leave",
+      "patient_id": "3",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 19,
+      "t": 37.04901305598283,
+      "type": "service_start",
+      "patient_id": "3",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 20,
+      "t": 37.31795709278591,
+      "type": "service_end",
+      "patient_id": "3",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 21,
+      "t": 37.31795709278591,
+      "type": "departure",
+      "patient_id": "3",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 22,
+      "t": 37.953717890276906,
+      "type": "service_end",
+      "patient_id": "1",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 23,
+      "t": 37.953717890276906,
+      "type": "departure",
+      "patient_id": "1",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 1
+    },
+    {
+      "i": 24,
+      "t": 40.7497634953802,
+      "type": "arrival",
+      "patient_id": "4",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 1
+    },
+    {
+      "i": 25,
+      "t": 40.7497634953802,
+      "type": "queue_enter",
+      "patient_id": "4",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 26,
+      "t": 40.7497634953802,
+      "type": "queue_leave",
+      "patient_id": "4",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 27,
+      "t": 40.7497634953802,
+      "type": "service_start",
+      "patient_id": "4",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 28,
+      "t": 44.07513853283541,
+      "type": "arrival",
+      "patient_id": "5",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 29,
+      "t": 44.07513853283541,
+      "type": "queue_enter",
+      "patient_id": "5",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 30,
+      "t": 44.07513853283541,
+      "type": "queue_leave",
+      "patient_id": "5",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 31,
+      "t": 44.07513853283541,
+      "type": "service_start",
+      "patient_id": "5",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 32,
+      "t": 47.81053481733777,
+      "type": "arrival",
+      "patient_id": "6",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 33,
+      "t": 47.81053481733777,
+      "type": "queue_enter",
+      "patient_id": "6",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 2
+    },
+    {
+      "i": 34,
+      "t": 47.81053481733777,
+      "type": "queue_leave",
+      "patient_id": "6",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 35,
+      "t": 47.81053481733777,
+      "type": "service_start",
+      "patient_id": "6",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 36,
+      "t": 47.90833434565177,
+      "type": "arrival",
+      "patient_id": "7",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 37,
+      "t": 47.90833434565177,
+      "type": "queue_enter",
+      "patient_id": "7",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 38,
+      "t": 48.62305603780421,
+      "type": "service_end",
+      "patient_id": "4",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 39,
+      "t": 48.62305603780421,
+      "type": "departure",
+      "patient_id": "4",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 1,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 40,
+      "t": 48.62305603780421,
+      "type": "queue_leave",
+      "patient_id": "7",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 41,
+      "t": 48.62305603780421,
+      "type": "service_start",
+      "patient_id": "7",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 42,
+      "t": 54.14676064313048,
+      "type": "arrival",
+      "patient_id": "8",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 43,
+      "t": 54.14676064313048,
+      "type": "queue_enter",
+      "patient_id": "8",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 44,
+      "t": 59.78843422707262,
+      "type": "service_end",
+      "patient_id": "6",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 45,
+      "t": 59.78843422707262,
+      "type": "departure",
+      "patient_id": "6",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 1,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 46,
+      "t": 59.78843422707262,
+      "type": "queue_leave",
+      "patient_id": "8",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 47,
+      "t": 59.78843422707262,
+      "type": "service_start",
+      "patient_id": "8",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 48,
+      "t": 60.30229459134673,
+      "type": "arrival",
+      "patient_id": "9",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 49,
+      "t": 60.30229459134673,
+      "type": "queue_enter",
+      "patient_id": "9",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 50,
+      "t": 60.652519475066384,
+      "type": "service_end",
+      "patient_id": "5",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 51,
+      "t": 60.652519475066384,
+      "type": "departure",
+      "patient_id": "5",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 1,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 52,
+      "t": 60.652519475066384,
+      "type": "queue_leave",
+      "patient_id": "9",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 53,
+      "t": 60.652519475066384,
+      "type": "service_start",
+      "patient_id": "9",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 54,
+      "t": 60.80562107702894,
+      "type": "service_end",
+      "patient_id": "8",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3
+    },
+    {
+      "i": 55,
+      "t": 60.80562107702894,
+      "type": "departure",
+      "patient_id": "8",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 56,
+      "t": 77.10981886911897,
+      "type": "service_end",
+      "patient_id": "9",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 57,
+      "t": 77.10981886911897,
+      "type": "departure",
+      "patient_id": "9",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 58,
+      "t": 80.13828252218725,
+      "type": "service_end",
+      "patient_id": "7",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 59,
+      "t": 80.13828252218725,
+      "type": "departure",
+      "patient_id": "7",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 60,
+      "t": 88.51060071584381,
+      "type": "arrival",
+      "patient_id": "10",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 61,
+      "t": 88.51060071584381,
+      "type": "queue_enter",
+      "patient_id": "10",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 62,
+      "t": 88.51060071584381,
+      "type": "queue_leave",
+      "patient_id": "10",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 63,
+      "t": 88.51060071584381,
+      "type": "service_start",
+      "patient_id": "10",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 64,
+      "t": 108.1357071725378,
+      "type": "arrival",
+      "patient_id": "11",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 65,
+      "t": 108.1357071725378,
+      "type": "queue_enter",
+      "patient_id": "11",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 66,
+      "t": 108.1357071725378,
+      "type": "queue_leave",
+      "patient_id": "11",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 67,
+      "t": 108.1357071725378,
+      "type": "service_start",
+      "patient_id": "11",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 68,
+      "t": 115.27082741527258,
+      "type": "arrival",
+      "patient_id": "12",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 69,
+      "t": 115.27082741527258,
+      "type": "queue_enter",
+      "patient_id": "12",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 2
+    },
+    {
+      "i": 70,
+      "t": 115.27082741527258,
+      "type": "queue_leave",
+      "patient_id": "12",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 71,
+      "t": 115.27082741527258,
+      "type": "service_start",
+      "patient_id": "12",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 72,
+      "t": 123.88298682876103,
+      "type": "service_end",
+      "patient_id": "12",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3
+    },
+    {
+      "i": 73,
+      "t": 123.88298682876103,
+      "type": "departure",
+      "patient_id": "12",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 74,
+      "t": 124.672752572744,
+      "type": "service_end",
+      "patient_id": "10",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 75,
+      "t": 124.672752572744,
+      "type": "departure",
+      "patient_id": "10",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 76,
+      "t": 125.82031701839283,
+      "type": "service_end",
+      "patient_id": "11",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 77,
+      "t": 125.82031701839283,
+      "type": "departure",
+      "patient_id": "11",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 78,
+      "t": 129.7262704921753,
+      "type": "arrival",
+      "patient_id": "13",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 79,
+      "t": 129.7262704921753,
+      "type": "queue_enter",
+      "patient_id": "13",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 80,
+      "t": 129.7262704921753,
+      "type": "queue_leave",
+      "patient_id": "13",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 81,
+      "t": 129.7262704921753,
+      "type": "service_start",
+      "patient_id": "13",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 82,
+      "t": 132.31266019564697,
+      "type": "service_end",
+      "patient_id": "13",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 83,
+      "t": 132.31266019564697,
+      "type": "departure",
+      "patient_id": "13",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 84,
+      "t": 148.01621407589278,
+      "type": "arrival",
+      "patient_id": "14",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 85,
+      "t": 148.01621407589278,
+      "type": "queue_enter",
+      "patient_id": "14",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 86,
+      "t": 148.01621407589278,
+      "type": "queue_leave",
+      "patient_id": "14",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 87,
+      "t": 148.01621407589278,
+      "type": "service_start",
+      "patient_id": "14",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 88,
+      "t": 150.6661728398128,
+      "type": "service_end",
+      "patient_id": "14",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 89,
+      "t": 150.6661728398128,
+      "type": "departure",
+      "patient_id": "14",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 90,
+      "t": 153.140643933588,
+      "type": "arrival",
+      "patient_id": "15",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 91,
+      "t": 153.140643933588,
+      "type": "queue_enter",
+      "patient_id": "15",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 92,
+      "t": 153.140643933588,
+      "type": "queue_leave",
+      "patient_id": "15",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 93,
+      "t": 153.140643933588,
+      "type": "service_start",
+      "patient_id": "15",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 94,
+      "t": 154.73775145126018,
+      "type": "arrival",
+      "patient_id": "16",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 95,
+      "t": 154.73775145126018,
+      "type": "queue_enter",
+      "patient_id": "16",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 96,
+      "t": 154.73775145126018,
+      "type": "queue_leave",
+      "patient_id": "16",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 97,
+      "t": 154.73775145126018,
+      "type": "service_start",
+      "patient_id": "16",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 98,
+      "t": 157.0887366157976,
+      "type": "service_end",
+      "patient_id": "16",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 99,
+      "t": 157.0887366157976,
+      "type": "departure",
+      "patient_id": "16",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 100,
+      "t": 161.5457419000619,
+      "type": "arrival",
+      "patient_id": "17",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 101,
+      "t": 161.5457419000619,
+      "type": "queue_enter",
+      "patient_id": "17",
+      "triage": "red",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 102,
+      "t": 161.5457419000619,
+      "type": "queue_leave",
+      "patient_id": "17",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 103,
+      "t": 161.5457419000619,
+      "type": "service_start",
+      "patient_id": "17",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 0
+    },
+    {
+      "i": 104,
+      "t": 163.23799268893282,
+      "type": "service_end",
+      "patient_id": "15",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 105,
+      "t": 163.23799268893282,
+      "type": "departure",
+      "patient_id": "15",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 106,
+      "t": 166.2044317171617,
+      "type": "arrival",
+      "patient_id": "18",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 107,
+      "t": 166.2044317171617,
+      "type": "queue_enter",
+      "patient_id": "18",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 108,
+      "t": 166.2044317171617,
+      "type": "queue_leave",
+      "patient_id": "18",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 109,
+      "t": 166.2044317171617,
+      "type": "service_start",
+      "patient_id": "18",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 110,
+      "t": 171.98798824712065,
+      "type": "service_end",
+      "patient_id": "17",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 111,
+      "t": 171.98798824712065,
+      "type": "departure",
+      "patient_id": "17",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 112,
+      "t": 179.26547628428554,
+      "type": "service_end",
+      "patient_id": "18",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 113,
+      "t": 179.26547628428554,
+      "type": "departure",
+      "patient_id": "18",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 114,
+      "t": 180.2951741371057,
+      "type": "arrival",
+      "patient_id": "19",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 115,
+      "t": 180.2951741371057,
+      "type": "queue_enter",
+      "patient_id": "19",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 116,
+      "t": 180.2951741371057,
+      "type": "queue_leave",
+      "patient_id": "19",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 117,
+      "t": 180.2951741371057,
+      "type": "service_start",
+      "patient_id": "19",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 118,
+      "t": 182.97135714922487,
+      "type": "arrival",
+      "patient_id": "20",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 119,
+      "t": 182.97135714922487,
+      "type": "queue_enter",
+      "patient_id": "20",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 120,
+      "t": 182.97135714922487,
+      "type": "queue_leave",
+      "patient_id": "20",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 121,
+      "t": 182.97135714922487,
+      "type": "service_start",
+      "patient_id": "20",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 122,
+      "t": 194.51094504257873,
+      "type": "service_end",
+      "patient_id": "20",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 123,
+      "t": 194.51094504257873,
+      "type": "departure",
+      "patient_id": "20",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 124,
+      "t": 198.29611585612847,
+      "type": "arrival",
+      "patient_id": "21",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 125,
+      "t": 198.29611585612847,
+      "type": "queue_enter",
+      "patient_id": "21",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 126,
+      "t": 198.29611585612847,
+      "type": "queue_leave",
+      "patient_id": "21",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 127,
+      "t": 198.29611585612847,
+      "type": "service_start",
+      "patient_id": "21",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 128,
+      "t": 200.89740843123502,
+      "type": "service_end",
+      "patient_id": "21",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 129,
+      "t": 200.89740843123502,
+      "type": "departure",
+      "patient_id": "21",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 130,
+      "t": 225.88123782152633,
+      "type": "service_end",
+      "patient_id": "19",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 131,
+      "t": 225.88123782152633,
+      "type": "departure",
+      "patient_id": "19",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 132,
+      "t": 226.05461687584108,
+      "type": "arrival",
+      "patient_id": "22",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 133,
+      "t": 226.05461687584108,
+      "type": "queue_enter",
+      "patient_id": "22",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 134,
+      "t": 226.05461687584108,
+      "type": "queue_leave",
+      "patient_id": "22",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 135,
+      "t": 226.05461687584108,
+      "type": "service_start",
+      "patient_id": "22",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 136,
+      "t": 226.54401819814316,
+      "type": "arrival",
+      "patient_id": "23",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 137,
+      "t": 226.54401819814316,
+      "type": "queue_enter",
+      "patient_id": "23",
+      "triage": "red",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 138,
+      "t": 226.54401819814316,
+      "type": "queue_leave",
+      "patient_id": "23",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 139,
+      "t": 226.54401819814316,
+      "type": "service_start",
+      "patient_id": "23",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 0
+    },
+    {
+      "i": 140,
+      "t": 229.17082520677516,
+      "type": "service_end",
+      "patient_id": "22",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 141,
+      "t": 229.17082520677516,
+      "type": "departure",
+      "patient_id": "22",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 142,
+      "t": 230.0985264061729,
+      "type": "arrival",
+      "patient_id": "24",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 143,
+      "t": 230.0985264061729,
+      "type": "queue_enter",
+      "patient_id": "24",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 144,
+      "t": 230.0985264061729,
+      "type": "queue_leave",
+      "patient_id": "24",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 145,
+      "t": 230.0985264061729,
+      "type": "service_start",
+      "patient_id": "24",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 146,
+      "t": 235.13424471964882,
+      "type": "service_end",
+      "patient_id": "24",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 147,
+      "t": 235.13424471964882,
+      "type": "departure",
+      "patient_id": "24",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 148,
+      "t": 235.7665209698009,
+      "type": "arrival",
+      "patient_id": "25",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 149,
+      "t": 235.7665209698009,
+      "type": "queue_enter",
+      "patient_id": "25",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 150,
+      "t": 235.7665209698009,
+      "type": "queue_leave",
+      "patient_id": "25",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 151,
+      "t": 235.7665209698009,
+      "type": "service_start",
+      "patient_id": "25",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 152,
+      "t": 238.84373851260608,
+      "type": "service_end",
+      "patient_id": "25",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 153,
+      "t": 238.84373851260608,
+      "type": "departure",
+      "patient_id": "25",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 154,
+      "t": 247.44844666326213,
+      "type": "service_end",
+      "patient_id": "23",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 155,
+      "t": 247.44844666326213,
+      "type": "departure",
+      "patient_id": "23",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 0
+    },
+    {
+      "i": 156,
+      "t": 272.66345591711286,
+      "type": "arrival",
+      "patient_id": "26",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 157,
+      "t": 272.66345591711286,
+      "type": "queue_enter",
+      "patient_id": "26",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 158,
+      "t": 272.66345591711286,
+      "type": "queue_leave",
+      "patient_id": "26",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 159,
+      "t": 272.66345591711286,
+      "type": "service_start",
+      "patient_id": "26",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 160,
+      "t": 275.71162440930476,
+      "type": "service_end",
+      "patient_id": "26",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 161,
+      "t": 275.71162440930476,
+      "type": "departure",
+      "patient_id": "26",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 162,
+      "t": 276.91138835407816,
+      "type": "arrival",
+      "patient_id": "27",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 1
+    },
+    {
+      "i": 163,
+      "t": 276.91138835407816,
+      "type": "queue_enter",
+      "patient_id": "27",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 164,
+      "t": 276.91138835407816,
+      "type": "queue_leave",
+      "patient_id": "27",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 165,
+      "t": 276.91138835407816,
+      "type": "service_start",
+      "patient_id": "27",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 166,
+      "t": 282.0096579990068,
+      "type": "service_end",
+      "patient_id": "27",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 167,
+      "t": 282.0096579990068,
+      "type": "departure",
+      "patient_id": "27",
+      "triage": "yellow",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 1
+    },
+    {
+      "i": 168,
+      "t": 290.08858298585295,
+      "type": "arrival",
+      "patient_id": "28",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 0
+    },
+    {
+      "i": 169,
+      "t": 290.08858298585295,
+      "type": "queue_enter",
+      "patient_id": "28",
+      "triage": "red",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 170,
+      "t": 290.08858298585295,
+      "type": "queue_leave",
+      "patient_id": "28",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 171,
+      "t": 290.08858298585295,
+      "type": "service_start",
+      "patient_id": "28",
+      "triage": "red",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 172,
+      "t": 293.8024467356092,
+      "type": "arrival",
+      "patient_id": "29",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 173,
+      "t": 293.8024467356092,
+      "type": "queue_enter",
+      "patient_id": "29",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 174,
+      "t": 293.8024467356092,
+      "type": "queue_leave",
+      "patient_id": "29",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 175,
+      "t": 293.8024467356092,
+      "type": "service_start",
+      "patient_id": "29",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 176,
+      "t": 294.96384331946234,
+      "type": "service_end",
+      "patient_id": "29",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 177,
+      "t": 294.96384331946234,
+      "type": "departure",
+      "patient_id": "29",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 178,
+      "t": 295.2321047335426,
+      "type": "arrival",
+      "patient_id": "30",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 179,
+      "t": 295.2321047335426,
+      "type": "queue_enter",
+      "patient_id": "30",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 180,
+      "t": 295.2321047335426,
+      "type": "queue_leave",
+      "patient_id": "30",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 181,
+      "t": 295.2321047335426,
+      "type": "service_start",
+      "patient_id": "30",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 182,
+      "t": 297.2124190586321,
+      "type": "service_end",
+      "patient_id": "28",
+      "triage": "red",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 183,
+      "t": 297.2124190586321,
+      "type": "departure",
+      "patient_id": "28",
+      "triage": "red",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 184,
+      "t": 300.7166868113791,
+      "type": "service_end",
+      "patient_id": "30",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 185,
+      "t": 300.7166868113791,
+      "type": "departure",
+      "patient_id": "30",
+      "triage": "yellow",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 1
+    },
+    {
+      "i": 186,
+      "t": 310.0427056910112,
+      "type": "arrival",
+      "patient_id": "31",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 187,
+      "t": 310.0427056910112,
+      "type": "queue_enter",
+      "patient_id": "31",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 188,
+      "t": 310.0427056910112,
+      "type": "queue_leave",
+      "patient_id": "31",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 189,
+      "t": 310.0427056910112,
+      "type": "service_start",
+      "patient_id": "31",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 190,
+      "t": 311.02723582583354,
+      "type": "arrival",
+      "patient_id": "32",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 0
+    },
+    {
+      "i": 191,
+      "t": 311.02723582583354,
+      "type": "queue_enter",
+      "patient_id": "32",
+      "triage": "red",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 192,
+      "t": 311.02723582583354,
+      "type": "queue_leave",
+      "patient_id": "32",
+      "triage": "red",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 193,
+      "t": 311.02723582583354,
+      "type": "service_start",
+      "patient_id": "32",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 0
+    },
+    {
+      "i": 194,
+      "t": 322.32433560609053,
+      "type": "arrival",
+      "patient_id": "33",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 195,
+      "t": 322.32433560609053,
+      "type": "queue_enter",
+      "patient_id": "33",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 2
+    },
+    {
+      "i": 196,
+      "t": 322.32433560609053,
+      "type": "queue_leave",
+      "patient_id": "33",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 197,
+      "t": 322.32433560609053,
+      "type": "service_start",
+      "patient_id": "33",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 198,
+      "t": 322.49754717176864,
+      "type": "arrival",
+      "patient_id": "34",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 199,
+      "t": 322.49754717176864,
+      "type": "queue_enter",
+      "patient_id": "34",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 200,
+      "t": 330.74421307014575,
+      "type": "service_end",
+      "patient_id": "32",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 201,
+      "t": 330.74421307014575,
+      "type": "departure",
+      "patient_id": "32",
+      "triage": "red",
+      "server_id": 1,
+      "queue_length_hint": 1,
+      "in_service_hint": 2,
+      "priority": 0
+    },
+    {
+      "i": 202,
+      "t": 330.74421307014575,
+      "type": "queue_leave",
+      "patient_id": "34",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 203,
+      "t": 330.74421307014575,
+      "type": "service_start",
+      "patient_id": "34",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 204,
+      "t": 333.7722708210324,
+      "type": "service_end",
+      "patient_id": "33",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3
+    },
+    {
+      "i": 205,
+      "t": 333.7722708210324,
+      "type": "departure",
+      "patient_id": "33",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 1
+    },
+    {
+      "i": 206,
+      "t": 334.0470093581463,
+      "type": "arrival",
+      "patient_id": "35",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 207,
+      "t": 334.0470093581463,
+      "type": "queue_enter",
+      "patient_id": "35",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 2
+    },
+    {
+      "i": 208,
+      "t": 334.0470093581463,
+      "type": "queue_leave",
+      "patient_id": "35",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 209,
+      "t": 334.0470093581463,
+      "type": "service_start",
+      "patient_id": "35",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 2
+    },
+    {
+      "i": 210,
+      "t": 335.8211996696068,
+      "type": "arrival",
+      "patient_id": "36",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 211,
+      "t": 335.8211996696068,
+      "type": "queue_enter",
+      "patient_id": "36",
+      "triage": "yellow",
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 212,
+      "t": 340.09331334678967,
+      "type": "service_end",
+      "patient_id": "35",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 1,
+      "in_service_hint": 3
+    },
+    {
+      "i": 213,
+      "t": 340.09331334678967,
+      "type": "departure",
+      "patient_id": "35",
+      "triage": "green",
+      "server_id": 2,
+      "queue_length_hint": 1,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 214,
+      "t": 340.09331334678967,
+      "type": "queue_leave",
+      "patient_id": "36",
+      "triage": "yellow",
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 215,
+      "t": 340.09331334678967,
+      "type": "service_start",
+      "patient_id": "36",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 3,
+      "priority": 1
+    },
+    {
+      "i": 216,
+      "t": 340.9874779252844,
+      "type": "service_end",
+      "patient_id": "34",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 3
+    },
+    {
+      "i": 217,
+      "t": 340.9874779252844,
+      "type": "departure",
+      "patient_id": "34",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    },
+    {
+      "i": 218,
+      "t": 343.1502674518159,
+      "type": "service_end",
+      "patient_id": "36",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 2
+    },
+    {
+      "i": 219,
+      "t": 343.1502674518159,
+      "type": "departure",
+      "patient_id": "36",
+      "triage": "yellow",
+      "server_id": 2,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 1
+    },
+    {
+      "i": 220,
+      "t": 365.5654648971941,
+      "type": "service_end",
+      "patient_id": "31",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 221,
+      "t": 365.5654648971941,
+      "type": "departure",
+      "patient_id": "31",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 222,
+      "t": 381.94800404770854,
+      "type": "arrival",
+      "patient_id": "37",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0,
+      "priority": 2
+    },
+    {
+      "i": 223,
+      "t": 381.94800404770854,
+      "type": "queue_enter",
+      "patient_id": "37",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 0
+    },
+    {
+      "i": 224,
+      "t": 381.94800404770854,
+      "type": "queue_leave",
+      "patient_id": "37",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 0
+    },
+    {
+      "i": 225,
+      "t": 381.94800404770854,
+      "type": "service_start",
+      "patient_id": "37",
+      "triage": "green",
+      "server_id": 0,
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 226,
+      "t": 392.36280546153284,
+      "type": "arrival",
+      "patient_id": "38",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1,
+      "priority": 2
+    },
+    {
+      "i": 227,
+      "t": 392.36280546153284,
+      "type": "queue_enter",
+      "patient_id": "38",
+      "triage": "green",
+      "queue_length_hint": 1,
+      "in_service_hint": 1
+    },
+    {
+      "i": 228,
+      "t": 392.36280546153284,
+      "type": "queue_leave",
+      "patient_id": "38",
+      "triage": "green",
+      "queue_length_hint": 0,
+      "in_service_hint": 1
+    },
+    {
+      "i": 229,
+      "t": 392.36280546153284,
+      "type": "service_start",
+      "patient_id": "38",
+      "triage": "green",
+      "server_id": 1,
+      "queue_length_hint": 0,
+      "in_service_hint": 2,
+      "priority": 2
+    }
+  ]
+}

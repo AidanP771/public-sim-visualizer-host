@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import base64
 import html
+import os
 import sys
 import time
 from functools import lru_cache
@@ -75,6 +76,7 @@ def _ensure_session_defaults() -> None:
     st.session_state.setdefault("selected_trace", "")
     st.session_state.setdefault("selected_demo_preset", DEFAULT_DEMO_PRESET)
     st.session_state.setdefault("auto_demo_loaded", False)
+    st.session_state.setdefault("auto_requested_loaded", False)
 
 
 def _render_controls(local_trace_files: list[Path]) -> None:
@@ -82,6 +84,25 @@ def _render_controls(local_trace_files: list[Path]) -> None:
     col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 3])
 
     traces_by_name = {path.name: path for path in local_trace_files}
+
+    requested_trace_raw = os.environ.get("SIM_REPLAY_TRACE", "").strip()
+    if (
+        st.session_state.engine is None
+        and requested_trace_raw
+        and not st.session_state.auto_requested_loaded
+    ):
+        requested_trace_path = Path(requested_trace_raw)
+        if requested_trace_path.exists() and requested_trace_path.is_file():
+            requested_trace = load_replay_trace(requested_trace_path)
+            _load_trace_into_session(
+                requested_trace,
+                source_name=requested_trace_path.name,
+            )
+            st.session_state.selected_demo_preset = "custom"
+            st.session_state.auto_requested_loaded = True
+            st.rerun()
+        else:
+            st.session_state.auto_requested_loaded = True
     available_demo_presets = {
         label: filename
         for label, filename in DEMO_PRESET_FILES.items()
@@ -335,7 +356,7 @@ def _render_recent_events(engine: ReplayEngine) -> None:
                 "type": event.type,
                 "patient_id": event.patient_id or "",
                 "triage": event.triage or "",
-                "server_id": "" if event.server_id is None else event.server_id,
+                "server_id": "" if event.server_id is None else str(event.server_id),
             }
         )
     if rows:
