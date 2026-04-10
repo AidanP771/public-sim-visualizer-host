@@ -335,10 +335,15 @@ def _render_metrics(engine: ReplayEngine) -> None:
     state = engine.state
     st.subheader("live metrics")
 
+    max_queue_length = 0
+    if state.history:
+        max_queue_length = int(max(point["queue_length"] for point in state.history))
+
     metric_rows = [
         {"metric": "total arrived", "value": state.total_arrived},
         {"metric": "total served", "value": state.total_served},
         {"metric": "number in system", "value": state.num_in_system},
+        {"metric": "max queue length", "value": max_queue_length},
         {"metric": "running average wait", "value": round(state.running_average_wait, 3)},
         {"metric": "busy time", "value": round(state.busy_time, 3)},
     ]
